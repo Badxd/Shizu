@@ -34,7 +34,7 @@ Powered by [Pyrogram](https://github.com/pyrogram/pyrogram), [Py-TgCalls](https:
 
 <div align="center">
 
-[![Heroku](https://img.shields.io/badge/Deploy-Heroku-430098?style=for-the-badge&logo=heroku&logoColor=white)](https://dashboard.heroku.com/new?template=https://github.com/Badxd/Shizu)
+[![Heroku](https://img.shields.io/badge/Deploy-Heroku-430098?style=for-the-badge&logo=heroku&logoColor=white)](https://dashboard.heroku.com/new?template=https://github.com/Badmunda05/ShizuMusic)
 [![Koyeb](https://img.shields.io/badge/Deploy-Koyeb-121212?style=for-the-badge&logo=koyeb&logoColor=white)](https://app.koyeb.com/deploy?type=git&repository=github.com/Badmunda05/ShizuMusic&branch=main&name=shizumusic)
 [![Render](https://img.shields.io/badge/Deploy-Render-46E3B7?style=for-the-badge&logo=render&logoColor=black)](https://render.com/deploy?repo=https://github.com/Badmunda05/ShizuMusic)
 [![Railway](https://img.shields.io/badge/Deploy-Railway-0B0D0E?style=for-the-badge&logo=railway&logoColor=white)](https://railway.app/new/template?template=https://github.com/Badmunda05/ShizuMusic)
@@ -71,8 +71,6 @@ BOT_TOKEN=          # @BotFather
 OWNER_ID=           # your Telegram user ID
 STRING_SESSION=     # Pyrogram session of the assistant account
 MONGO_DB_URL=       # MongoDB connection string
-YT_API_URL=         # external API url for downloads
-YT_API_KEY=         # external API key
 ```
 
 ### Optional
@@ -85,6 +83,10 @@ SUPPORT_GROUP=      # support group link
 UPDATES_CHANNEL=    # updates channel link
 PING_IMG_URL=       # image shown in /ping
 SESSION_NAME=       # default: ShizuMusic
+API_URL=            # your download API base url (optional fallback)
+API_KEY=            # your download API key (optional)
+USE_COOKIES=        # True: cookies first, API fallback | False: API first (default False if API set, else True)
+COOKIES_URL=        # batbin.me cookie links, space separated (for yt-dlp)
 PORT=               # default: 10000 (Render / Koyeb)
 ```
 
